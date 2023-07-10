@@ -1,0 +1,43 @@
+.btn:hover{
+    color: black;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: white;
+    color: white;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.btn1:hover::before{
+    height: 100%;
+}
+.navbar li, footer li {
+    padding: 0;
+    position: relative;
+    padding-bottom: 5px;
+}
+.navbar li::after, footer li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s;
+}
+.navbar li:hover::after, footer li:hover::after {
+    width: 100%;
+}
+.hidden_sidebar ul li:hover{
+    color: #d1d1d1;
+    cursor: pointer;
+}
+.menu:hover{
+    cursor: pointer;
+}

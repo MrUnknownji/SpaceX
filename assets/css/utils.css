@@ -1,0 +1,14 @@
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.fill-white{
+    fill: white;
+}
+.down_arrow{
+    fill: transparent;
+}

@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    font-family: Arial,Verdana,sans-serif;
+    overflow-x: hidden;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.logo{
+    width: 200px;
+    transition: 0.5s;
+}
+.logo svg{
+    width: 100%;
+}
+ul, a{
+    list-style: none;
+    text-decoration: none;
+}
+.overlay_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.menu{
+    width: 20px;
+    height: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.menu_lines{
+    background-color: white;
+    width: 15px;
+    height: 1.5px;
+    transition: all 0.5s ease-in-out;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    height: 13vh;
+    padding:0 0 0 8vw;
+    transition: 0.3s;
+    z-index: 5;
+}
+.navbar{
+    transition: 0.5s;
+}
+.navbar li, footer li{
+    margin: 0px 15px;
+}
+.hidden_sidebar{
+    z-index: 4;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 23vw;
+    padding: 13vh 5vw;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.hidden_sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.hidden_sidebar ul li{
+    width: 100%;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 10px 0px;
+    text-align: end;
+    border-bottom: 1px solid rgb(85, 85, 85, 0.8);
+    padding-bottom: 5px;
+    transition: all 1s;
+}
+.shop_and_menu{
+    position: absolute;
+    right: 10px;
+    margin: auto 4vw auto auto;
+}
+.image1{
+    background: url("../images/LAUNCHES_Starlink_SLC_40_Desktop_ad41fa5a42.jpg");
+}
+.image2{
+    background: url("../images/07_07_23_Starlink_5_13_0949_desktop_e4172d0ca4.jpg");
+}
+.image3{
+    background: url("../images/Euclid_outsidetowerh_IMG_2487_desktop_a75e89406d.jpg");
+}
+.image4{
+    background: url("../images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg");
+}
+.image1, .image2, .image3, .image4{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+.content_button{
+    width: 30vw;
+    margin: 0 0 16vh 7vw;
+}
+h3{
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+.btn{
+    position: relative;
+    padding: 17px 55px;
+    border:2px solid white;
+    font-weight: bold;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.scroll_down_logo{
+    width: 5vw;
+    align-self: end;
+    margin: 0 0 50px 9vw;
+}
+footer{
+    background-color: black;
+    height: 10vh;
+}
+.copyright{
+    margin-right: 15px;
+    font-weight: 100;
+}
