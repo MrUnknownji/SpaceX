@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let scroll_down_logo = document.getElementsByClassName("scroll_down_logo")[0];
-    let scroll_down_logo1 = document.getElementsByClassName("scroll_down_logo")[1];
-    let scroll_down_logo2 = document.getElementsByClassName("scroll_down_logo")[2];
-    let scroll_down_logo3 = document.getElementsByClassName("scroll_down_logo")[3];
     let logo = document.getElementsByClassName("logo")[0];
     let navbar = document.getElementsByClassName("navbar")[0];
     let header = document.getElementsByClassName("header")[0];
@@ -12,24 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let menu_line2 = document.getElementsByClassName("menu_lines")[1];
     let menu_line3 = document.getElementsByClassName("menu_lines")[2];
     let overlay = document.getElementsByClassName("overlay_container")[0];
-    let i = 1000;
+    // let i = 1000;
     let menu_flag = 0;
-
-    // Interval for animating arrow down icon 
-    let myInterval = setInterval(scrollDownOnload, 5);
-    
-    // Function for animating arrow down icon 
-    function scrollDownOnload() {
-        if (i <= 1000 && i >= 400) {
-            scroll_down_logo.style.marginBottom = (i/20) + "px";
-            scroll_down_logo1.style.marginBottom = (i/20) + "px";
-            scroll_down_logo2.style.marginBottom = (i/20) + "px";
-            scroll_down_logo3.style.marginBottom = (i/20) + "px";
-            i--;
-        } else {
-            i = 1000;
-        }
-    }
 
     // Adding Event listener for calling a scroll related function on scroll
     let prevScrollPos = 0;

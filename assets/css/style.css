@@ -156,3 +156,11 @@ footer{
     margin-right: 15px;
     font-weight: 100;
 }
+body div div svg {
+    animation: upDown 1.5s linear infinite;
+}
+@keyframes upDown {
+    to{
+        transform: translateY(10px);
+    }
+}
